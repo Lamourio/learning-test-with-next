@@ -7,4 +7,9 @@ describe('Home page - rendering',() => {
         render(<Home />);
         expect(screen.getByText('Home Page')).toBeInTheDocument();
     })
+
+    it('should have a button with a text click me', () => {
+        render(<Home />);
+        expect(screen.getByRole('button',{name : 'click me'})).toBeInTheDocument();
+    })
 })

@@ -22,4 +22,9 @@ describe('Home page - rendering',() => {
         render(<Home />);
         expect(screen.getByPlaceholderText(/Search/)).toBeInTheDocument();
     })
+
+    it('should have input field with a place holder text search', () => {
+        render(<Home />);
+        expect(screen.getByDisplayValue(/AUDI/)).toBeInTheDocument();
+    })
 })

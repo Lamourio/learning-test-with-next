@@ -4,7 +4,8 @@
     "moduleResolution": "bundler",
     "baseUrl": "./",
     "paths": {
-      "@/components/*": ["components/*"]
+      "@/components/*": ["components/*"],
+      "@/*": ["./src/*"]
     }
   },
   "typeAcquisition": { "include": [ "jest" ] } 

@@ -12,4 +12,9 @@ describe('Home page - rendering',() => {
         render(<Home />);
         expect(screen.getByRole('button',{name : 'click me'})).toBeInTheDocument();
     })
+
+    it('should have input field with label Enter Random Text', () => {
+        render(<Home />);
+        expect(screen.getByLabelText(/Enter Random/)).toBeInTheDocument();
+    })
 })
